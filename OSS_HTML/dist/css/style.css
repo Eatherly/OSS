@@ -1,0 +1,240 @@
+.container {
+  width: 1020px;
+  height: 1360px;
+  background-image: url(../img/bg.png);
+  font-family: Arial;
+  padding-left: 45px;
+  padding-right: 45px; }
+
+.header {
+  text-align: center; }
+
+.logo {
+  font-size: 88.5pt;
+  color: #bcbab9;
+  margin: 0 auto; }
+
+.navigation {
+  width: 930px;
+  height: 55px;
+  background-color: #ffffff;
+  line-height: 55px;
+  padding-left: 45px;
+  text-align: left; }
+
+.navigation__menu {
+  display: inline-block;
+  height: 100%;
+  line-height: 55px;
+  margin-right: 70px; }
+  .navigation__menu a {
+    color: #adadad;
+    font-size: 18px;
+    font-weight: 600; }
+
+.subSearchBlock {
+  height: 35px;
+  width: 100%;
+  line-height: 35px;
+  border: 1px solid #f4f4f4; }
+
+.searchBlock {
+  width: 260px;
+  height: 55px;
+  background-color: #fafafa;
+  border: 10px solid white;
+  margin-left: 93px;
+  margin-right: 0; }
+
+.search {
+  padding-left: 20px;
+  height: 30px;
+  display: inline;
+  border: none;
+  background-color: #fafafa;
+  width: 200px;
+  color: #dcdcdc;
+  font-style: italic;
+  outline: none; }
+
+.main {
+  width: 930px;
+  height: 970px;
+  color: #1f1f1f; }
+
+.main__item {
+  margin-top: 15px; }
+
+.main__up {
+  width: 100%;
+  height: 375px;
+  background-color: #ffffff;
+  background-image: url(../img/city.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  border: 15px solid white; }
+
+.main__middle {
+  margin-left: 0;
+  width: 100%;
+  height: 375px;
+  padding: 0; }
+
+.middle__item {
+  width: 225px;
+  margin-top: 0;
+  margin-right: 6px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 12px;
+  display: inline-block; }
+  .middle__item:last-child {
+    margin-right: 0px; }
+
+.main__down {
+  width: 100%;
+  height: 185px;
+  background-color: #ffffff;
+  padding: 15px; }
+
+footer {
+  width: 930px;
+  height: 55px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  font-size: 12px;
+  padding-left: 20px; }
+  footer span {
+    float: left;
+    white-space: pre;
+    line-height: 10px; }
+
+.item__img {
+  height: 155px;
+  width: 201px; }
+
+.item__discr {
+  margin-top: 20px;
+  text-align: justify;
+  margin-bottom: 30px; }
+
+.item__discr p {
+  text-indent: 3em;
+  font-size: 12px;
+  line-height: 1.2em; }
+
+.more {
+  float: right;
+  color: black;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 10px; }
+
+.house {
+  background-image: url(../img/house.png); }
+
+.car {
+  background-image: url(../img/car.png); }
+
+.hlam {
+  background-image: url(../img/hlam.png); }
+
+.nature {
+  background-image: url(../img/nature.png); }
+
+.main__down {
+  padding-left: 7px;
+  padding-top: 12px; }
+
+.down__img {
+  height: 165px;
+  width: 240px;
+  display: inline-block; }
+
+.img__small {
+  height: 77px;
+  width: 103px;
+  display: inline-block;
+  background-image: url(../img/house.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin-left: 8px;
+  margin-bottom: 4px; }
+
+.smallHause {
+  background-image: url(../img/house.png);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.smallCar {
+  background-image: url(../img/car.png);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.smallHlam {
+  background-image: url(../img/hlam.png);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.smallNature {
+  background-image: url(../img/nature.PNG);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.down__text {
+  display: inline-block;
+  width: 665px;
+  height: 165px;
+  float: right; }
+  .down__text p {
+    margin-bottom: 20px; }
+
+.welcome {
+  margin-top: -20px;
+  margin-bottom: 15px;
+  font-weight: 600; }
+
+.mobButton {
+  height: 30px;
+  width: 30px;
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 640px;
+    height: 1095px;
+    padding-left: 90px;
+    padding-right: 90px; }
+  .logo {
+    display: none; }
+  .main {
+    width: 460px;
+    height: 955px; }
+  .navigation {
+    width: 460px;
+    height: 55px; }
+  .main__up {
+    height: 196px; }
+  .main__middle {
+    height: 750px; }
+  .middle__item {
+    height: 375px;
+    width: 228px;
+    margin-top: 3px;
+    margin-right: 0px; }
+  .main__down {
+    display: none; }
+  .footer {
+    margin-top: 25px;
+    width: 460px;
+    height: 30px;
+    line-height: 30px; }
+  footer span {
+    line-height: 30px; }
+  .navigation__menu {
+    display: none; }
+  .searchBlock {
+    display: inline-block; }
+  .mobButton {
+    display: inline; } }

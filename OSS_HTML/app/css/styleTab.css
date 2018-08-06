@@ -1,0 +1,38 @@
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 640px;
+    height: 1095px;
+    padding-left: 90px;
+    padding-right: 90px; }
+  .logo {
+    display: none; }
+  .main {
+    width: 460px;
+    height: 955px; }
+  .navigation {
+    width: 460px;
+    height: 55px; }
+  .main__up {
+    height: 196px; }
+  .main__middle {
+    height: 750px; }
+  .middle__item {
+    height: 375px;
+    width: 228px;
+    margin-top: 3px;
+    margin-right: 0px; }
+  .main__down {
+    display: none; }
+  .footer {
+    margin-top: 25px;
+    width: 460px;
+    height: 30px;
+    line-height: 30px; }
+  footer span {
+    line-height: 30px; }
+  .navigation__menu {
+    display: none; }
+  .searchBlock {
+    display: inline-block; }
+  .mobButton {
+    display: inline; } }

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OSS Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"/>
+        <style>
+            label {
+                width: 100px;
+            }
+            .error {
+                color: red;
+                font-size: 12px;
+                margin-left: 105px;
+                margin-bottom: 5px;
+                visibility: hidden;
+            }
+            input {
+                border : 1px solid #ccc;
+            }
+            input.error {
+                border-color: red;
+            }
+            .content {
+                padding: 15px;
+                border: 1px solid #ccc;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content">
+                        <form onsubmit="myForm()" id="testForm">
+                            <div>
+                                <label for="firstName">First name</label>
+                                <input type="text" id="firstName"/>
+                                <div class="error" id="errName">Please, fill this field</div>
+                            </div>
+
+                            <div>
+                                <label for="lastName">Last name</label>
+                                <input type="text" id="lastName"/>
+                                <div class="error" id="errLastName">Please, fill this field</div>
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="text" id="email"/>
+                                <div class="error" id="errEmail">Please, enter correct email</div>
+                            </div>
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myForm() {
+                event.preventDefault();
+                function hidden() {
+                    let err = document.querySelectorAll(".error");
+
+                    err.forEach(function (el) {
+                        el.style.visibility = "hidden";
+                    });
+                }
+                hidden();
+                let name = document.getElementById("firstName").value;
+                let last = document.getElementById("lastName").value;
+                let mail = document.getElementById("email").value;
+                let i = 0;
+                if (name == false) {
+                    document.getElementById("errName").style.visibility = "visible";
+                    i++;
+                }
+                if (last == false) {
+                    document.getElementById("errLastName").style.visibility = "visible";
+                    i++;
+                }
+                let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if (reg.test(mail) == false) {
+                    document.getElementById("errEmail").style.visibility = "visible";
+                    i++;
+
+                }
+                if (!i) {
+                    alert("It's a success, man");
+                }
+
+
+
+            }
+
+        </script>
+
+    </body>
+</html>
